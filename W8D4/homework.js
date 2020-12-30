@@ -13,6 +13,7 @@ function Elephant(name, height, tricks) {
     this.name = name;
     this.height = height;
     this.tricks = tricks;
+
 }
 
 const dad = new Elephant('dad', 60, ['vids', 'beer'])
@@ -34,6 +35,10 @@ Elephant.prototype.play = function() {
     console.log(`${this.name} is ${this.tricks[tricky]}in'!` );
 }
 
+Elephant.paradeHelper = function (elephant) {
+    console.log(`${elephant.name} is trotting by!`)
+}
+
 
 // dad.trumpet()
 // dad.grow()
@@ -42,3 +47,20 @@ Elephant.prototype.play = function() {
 // dad.play()
 // console.log(dad.height)
 
+let ellie = new Elephant("Ellie", 185, ["giving human friends a ride", "playing hide and seek"]);
+let charlie = new Elephant("Charlie", 200, ["painting pictures", "spraying water for a slip and slide"]);
+let kate = new Elephant("Kate", 234, ["writing letters", "stealing peanuts"]);
+let micah = new Elephant("Micah", 143, ["trotting", "playing tic tac toe", "doing elephant ballet"]);
+
+let herd = [ellie, charlie, kate, micah];
+
+console.log(herd)
+
+function dinerBreakfast () {
+    let order = "i'd like food";l
+    console.log(order);
+
+    return function (food) {
+        order = 
+    }
+}
